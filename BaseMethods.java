@@ -36,8 +36,8 @@ public class BaseMethods {
 			driver = new EdgeDriver();
 		}
 		driver.get(url);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	
 	
@@ -106,6 +106,12 @@ public class BaseMethods {
 				each.click();
 			}
 		}
+	}
+	
+	private void mets() {
+		System.out.println("vijay");
+		System.out.println("contiunue");
+
 	}
 	
 	
